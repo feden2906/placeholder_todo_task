@@ -1,5 +1,5 @@
-import { DELETE_TASK, EDIT_TASK, LOAD_TODOS, SET_TASK } from "./actionTypes";
-import { getTodos } from "../../services/todosService";
+import { DELETE_TASK, EDIT_TASK, LOAD_TODOS, SET_TASK } from './actionTypes';
+import { getTodos } from '../../services/todosService';
 
 export const loadTodos = (limit) => async (dispatch) => {
   try {
@@ -13,7 +13,7 @@ export const loadTodos = (limit) => async (dispatch) => {
 };
 
 export const setTask = (payload) => ({type: SET_TASK, payload});
-export const deleteTask = (payload) => ({type: DELETE_TASK, payload})
-export const editTask = (payload) => ({type: EDIT_TASK, payload})
+export const deleteTask = (payload) => ({type: DELETE_TASK, payload});
+export const editTask = (payload) => ({type: EDIT_TASK, payload});
 
 

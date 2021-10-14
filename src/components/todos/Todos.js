@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
-import { loadTodos } from "../../redux";
-import { Todo } from "../todo/Todo";
+import { loadTodos } from '../../redux';
+import { Todo } from '../todo/Todo';
 
 export const Todos = () => {
   const dispatch = useDispatch();
@@ -14,11 +14,11 @@ export const Todos = () => {
     }
   }, [tasks, dispatch]);
 
-    return (
-        <div>
-          {
-            !!tasks && tasks.map(task => <Todo task={task} key={task.id}/>)
-          }
-        </div>
-    );
-}
+  return (
+    <div>
+      {
+        !!tasks && tasks.map(task => <Todo task={task} key={task.id}/>)
+      }
+    </div>
+  );
+};

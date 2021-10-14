@@ -1,5 +1,4 @@
-import {mainReducer} from "./mainReducer";
-import {combineReducers} from "redux";
+import {mainReducer} from './mainReducer';
+import {combineReducers} from 'redux';
 
-const reducer = combineReducers ({mainReducer})
-export {reducer}
+export const reducer = combineReducers ({mainReducer});
